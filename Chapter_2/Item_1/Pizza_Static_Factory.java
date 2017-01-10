@@ -15,14 +15,12 @@ public class Pizza_Static_Factory {
 
     public static Pizza_Static_Factory newCheesePizzaInstance() {
         Pizza_Static_Factory pizza = new Pizza_Static_Factory();
-        pizza.toppings = new ArrayList<String>();
         pizza.toppings.add(Pizza_Toppings.PARMESAN);
         return pizza;
     }
 
     public static Pizza_Static_Factory newHawaiianPizzaInstance() {
         Pizza_Static_Factory pizza = new Pizza_Static_Factory();
-        pizza.toppings = new ArrayList<String>();
         pizza.toppings.add(Pizza_Toppings.PINEAPPLE_CHUNKS);
         pizza.toppings.add(Pizza_Toppings.CRUMBLED_BACON);
         return pizza;
@@ -30,7 +28,6 @@ public class Pizza_Static_Factory {
 
     public static Pizza_Static_Factory newPepperoniPizzaInstance() {
         Pizza_Static_Factory pizza = new Pizza_Static_Factory();
-        pizza.toppings = new ArrayList<String>();
         pizza.toppings.add(Pizza_Toppings.PEPPERONI);
         return pizza;
     }
