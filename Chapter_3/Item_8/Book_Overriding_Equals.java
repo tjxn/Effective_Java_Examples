@@ -17,11 +17,17 @@ public class Book_Overriding_Equals {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Book_Overriding_Equals that = (Book_Overriding_Equals) o;
-        return length == that.length &&
-                Objects.equals(title, that.title) &&
-                Objects.equals(author, that.author);
+        if (this == o) {
+            return true;
+        }
+        
+        if (!(o instanceof Book_Overriding_Equals)){
+            return false;
+        }
+        
+        Book_Overriding_Equals bOE = (Book_Overriding_Equals) o;
+        return bOE.length == length
+            && bOE.title == title
+            && bOE.author == author;
     }
 }
