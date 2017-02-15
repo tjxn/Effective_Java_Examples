@@ -14,15 +14,6 @@ public class Book_Overriding_Equals {
         this.title = title;
         this.author = author;
     }
-    
-    @Override
-    public int hashCode() {
-        int result = 17;
-        result = 31 * result + length;
-        result = 31 * result + ((title == null)) ? 0 : title.hashCode();
-        result = 31 * result + ((author == null)) ? 0 : author.hashCode();
-        return result;
-    }
 
     @Override
     public boolean equals(Object o) {
